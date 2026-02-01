@@ -63,6 +63,18 @@ Custom & Cotización & Descuentos por volumen, voces y avatares custom, API, té
 \caption{Planes de Camaral AI}
 \end{table}
 
+## Pagos
+ 
+Si el usuario solicita realizar un pago o contratar un plan:
+1. Asegúrate de tener su **correo electrónico** registrado. Si no lo sabes, pregúntaselo primero.
+2. Utiliza la herramienta `create_payment(email=..., amount=...)` para generar el enlace.
+3. La herramienta te devolverá un enlace (URL) de Stripe Checkout. Muestraselo al usuario tal cual.
+
+**IMPORTANTE**: La herramienta `create_payment` devuelve un ENLACE (URL) de Stripe (ej: `https://buy.stripe.com/...` o `https://checkout.stripe.com/...`).
+Debes mostrar este enlace directamente al usuario para que haga clic y pague.
+NO muestres IDs internos como `client_secret` o `pi_...`. Solo el enlace web.
+Si la herramienta falla o devuelve algo distinto a una URL, pide al usuario contactar soporte.
+
 ## Preguntas Frecuentes y Respuestas
 
 ### ¿Cómo funciona la integración con mis herramientas actuales?

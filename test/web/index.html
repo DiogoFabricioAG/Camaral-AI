@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camaral AI - Chat Test</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="sidebar">
+        <div class="brand">
+          <div class="logo-circle">C</div>
+          <h1>Camaral AI</h1>
+        </div>
+        <div class="menu-item active"><span>💬</span> Test Chatbot</div>
+        <div class="menu-item"><span>⚙️</span> Configuración</div>
+        <div class="status-box">
+          <div class="status-indicator"></div>
+          <span>Sistema Operativo</span>
+        </div>
+      </div>
+
+      <div class="chat-area">
+        <div class="chat-header">
+          <div class="avatar-info">
+            <div class="avatar">🤖</div>
+            <div>
+              <h2>Asistente de Ventas</h2>
+              <span class="status-text">En línea - Gemini 2.0 Flash</span>
+            </div>
+          </div>
+          <div class="header-actions">
+            <button class="icon-btn" onclick="resetChat()">🔄</button>
+          </div>
+        </div>
+
+        <div class="messages-container" id="messagesContainer">
+          <div class="message bot-message">
+            <div class="message-content">
+              Hola, soy el asistente virtual de Camaral AI. ¿En qué puedo
+              ayudarte hoy para potenciar tus ventas?
+            </div>
+            <div class="message-time">Justo ahora</div>
+          </div>
+        </div>
+
+        <div class="input-area">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="userInput"
+              placeholder="Escribe tu mensaje aquí..."
+              autocomplete="off"
+            />
+            <button id="sendBtn" onclick="sendMessage()">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+          <div class="footer-text">
+            Camaral AI Powered by Gemini 2.0 Flash & Stripe
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
