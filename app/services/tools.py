@@ -43,6 +43,7 @@ class CRMTools:
             customer_id=customer.id, 
             total_amount=amount, 
             stripe_payment_id=session_id,
+            channel="web",
             status="pending"
         )
         self.db.add(order)

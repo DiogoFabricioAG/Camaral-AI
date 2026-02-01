@@ -22,7 +22,7 @@ def create_chat(db: Session):
     ]
     
     chat = client.chats.create(
-        model="gemini-2.0-flash",
+        model="gemini-2.5-flash",
         config=types.GenerateContentConfig(
             system_instruction=get_system_instructions(),
             tools=tool_list,

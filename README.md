@@ -15,12 +15,12 @@ El sistema actúa como un SDR (Sales Development Representative) inteligente cap
 - **Vender**: Consultar el catálogo de planes y generar enlaces de pago seguros (Stripe).
 - **Analizar**: Mantener contexto y memoria de la conversación (Window Context).
 
-Powered by **Google Gemini 2.0 Flash** para una latencia mínima y capacidades robustas de _Tool Calling_.
+Powered by **Google Gemini 2.5 Flash** para una latencia mínima y capacidades robustas de _Tool Calling_.
 
 ## 🚀 Stack Tecnológico
 
 - **Core Backend**: Python 3.13+, FastAPI.
-- **IA & LLM**: Google Gemini 2.0 Flash (via `google-genai` SDK v1.0+).
+- **IA & LLM**: Google Gemini 2.5 Flash (via `google-genai` SDK v1.0+).
 - **Persistencia**: SQLAlchemy (ORM) + SQLite (Dev) / Postgres (Prod).
 - **Pagos**: Stripe Checkout API.
 - **Frontend de Prueba**: Vanilla JS + CSS3 (Diseño moderno tipo Dashboard).
