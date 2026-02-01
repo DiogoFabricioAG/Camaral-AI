@@ -6,6 +6,8 @@ Este proyecto implementa el "cerebro" conversacional para **Camaral AI**, diseñ
 
 ![Arquitectura Camaral AI](camaral-ai-architecture.png)
 
+Explicación del Video : [Link](https://drive.google.com/file/d/1c6qxPjNgi1Pv3YVpSItpEnzzQLXqqwqy/view?usp=sharing)
+
 ## 📋 Descripción
 
 El sistema actúa como un SDR (Sales Development Representative) inteligente capaz de:
